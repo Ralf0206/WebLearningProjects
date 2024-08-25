@@ -1,0 +1,41 @@
+p{
+    font-family: Roboto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.video-title{
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.video-stats{
+    color: rgb(96,96,96);
+}
+.video-author{
+    color: rgb(96,96,96);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.video-description{
+    color: rgb(96,96,96);
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: 280px;
+    line-height: 22px;
+}
+.red-label{
+    margin-bottom: 50px;
+    background-color: rgb(227, 65, 64);
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-left: 40px;
+    
+}
+.link-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
