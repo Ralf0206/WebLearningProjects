@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expand Div</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column; /* Arranges children vertically */
-            height: 100vh; /* Makes the container take up the full height of the viewport */
-        }
-        
-        .header {
-            background-color: lightcoral; /* Example background color */
-            padding: 10px;
-        }
-        
-        .expandable {
-            flex: 1; /* Allows the div to expand and fill the available space */
-            background-color: lightblue; /* Example background color */
-        }
-        
-        .footer {
-            background-color: lightgreen; /* Example background color */
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
+<html>
+    <head>
+        <title>test</title>
+        <link rel="stylesheet" href="test.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <nav class="main-header">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><img class="spring_logo" src="img/pngfind.com-spring-png-535670.png" alt="spring_logo"></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="#home">Home</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="#about">About</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="#services">Services</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="site-container">
+            <div class="article-container">
+                <h1 class="article-heading">Projects</h1>
+                <p class="article-text">
+                    From configuration to security, web apps to big data—whatever the infrastructure needs of your application may be, 
+                    there is a Spring Project to help you build it. Start small and use just what you need— Spring is modular by design.
+                </p>
+            </div>
 
-<div class="container">
-    <div class="header">Header</div>
-    <div class="expandable">
-        This div expands to fill the remaining space.
-    </div>
-    <div class="footer">Footer</div>
-</div>
-
-</body>
+            <div class="tile-background">
+                <div class="tile-container">
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-image">  
+                            <img src="https://spring.io/img/projects/spring-boot.svg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <h1 style="font-weight: bolder;">Spring Boot</h1>
+                            <p>Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
