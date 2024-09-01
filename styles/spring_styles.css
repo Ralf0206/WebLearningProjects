@@ -15,7 +15,7 @@ body {
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
-    font-family: Open Sans;
+    font-family: "Open Sans";
 }
 
 
@@ -35,7 +35,6 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: "Open Sans";
-    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -50,13 +49,34 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
 }
 .article-container{
-    padding-left: px;
-    flex: 1;
+    margin-top: 60px;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
     margin: 10px;
-    padding-left: 250px;
+    padding-left: 10px;
     margin-bottom: 15px;
+    align-items: center;
+}
+.article{
+
+}
+.article-heading {
+    font-family: "Metropolis",sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+.article-text{
+    font-family: "Open Sans";
+    max-width: 1000px;
+    font-size: 1.5rem; 
 }
 .tile-background{
     background-color: #ebf2f2;
@@ -72,18 +92,9 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     gap: 10px;
+    justify-content: center;
 }
-.article-heading {
-    font-family: "Open Sans";
-    font-weight: 900;
-    font-size: 3.5rem;
-}
-.article-text{
-    font-family: "Open Sans";
-    max-width: 1000px;
-    font-size: 1.5rem;
-    
-}
+
 .tile{
     
     font-family: "Open Sans";
@@ -110,12 +121,14 @@ body {
     transform: translateY(-10px);
 }
 .tile-image{
-    height: 75px;
-    width: 150px;
+    height: auto;
+    width: 100px;
     max-width: 100%; 
     max-height: 100%;
     height: auto;
     margin: 15px;
+    justify-content: center;
+    align-content: center;
     
 }
 .tile-content{
