@@ -8,34 +8,73 @@ body {
 .main-header {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 30px;
+    width: 80%;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 15px 0;
-    text-align: center;
     z-index: 1000;
     font-family: "Open Sans";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-
-
 .nav-list {
     list-style-type: none;
-    margin: 0;
+    margin-right: 50px;
     padding: 0;
-    
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    justify-items: center;
 }
 
 .nav-list-item {
+    position: relative;
     display: inline;
     margin: 0 15px;
 }
 
 .nav-list-item-link {
     color: rgb(0, 0, 0);
+    padding: 10px;
     text-decoration: none;
     font-family: "Open Sans";
     padding-bottom: 20px;
+}
+.dropdown {
+    visibility: hidden;	
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 200px; 
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 0.3s ease,transform 0.3s ease;
+    
+}
+
+.dropdown-item {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: "Open Sans";
+}
+
+.dropdown-item:hover {
+    display: flex;
+    color: #6db33f;
+}
+
+
+.nav-list-item:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(10px);
 }
 
 .logo .st3 {
@@ -63,9 +102,6 @@ body {
     padding-left: 10px;
     margin-bottom: 15px;
     align-items: center;
-}
-.article{
-
 }
 .article-heading {
     font-family: "Metropolis",sans-serif;
